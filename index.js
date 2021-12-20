@@ -36,8 +36,8 @@ function initMARK() {
     myPosition: window.myPosition,
   });
 
-  const ejeX = lon < 0 ? "izquierda" : "derecha";
-  const ejeY = lat < 0 ? "ve atras" : "sigue derecho";
+  const ejeX = lat < 0 ? "izquierda" : "derecha";
+  const ejeY = lon < 0 ? "ve atras" : "sigue derecho";
 
   $panel.innerHTML = `
     <strong>Ve a la ${ejeX}, ${ejeY}</strong>
